@@ -17,3 +17,31 @@ cmake --build build
 ```sh
 ctest --test-dir build --output-on-failure
 ```
+
+## 로드맵
+
+```
+1. 지금 프로젝트 빌드
+        ↓
+2. 변수 / stack / function
+        ↓
+3. pointer / reference
+        ↓
+4. struct / class
+        ↓
+5. constructor / destructor
+        ↓
+6. RAII
+        ↓
+7. new/delete를 직접 사용해보기
+        ↓
+8. vector가 내부적으로 어떻게 메모리를 늘리는지 구현
+        ↓
+9. allocator / arena / pool
+        ↓
+10. Vec2 / Vec3 / Vec4
+        ↓
+11. Matrix
+        ↓
+12. 그래픽스
+```
