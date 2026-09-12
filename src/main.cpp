@@ -2,37 +2,34 @@
 
 #include<iostream>
 
-cppstudy::Vec2& makeVec();
-
 int main(){
-    // cppstudy::Vec2 a{3.0f, 4.0f};
-    // cppstudy::Vec2 b{1.0f, 2.0f};
+    // 오리지널 변수 생성
+    cppstudy::Vec2 original{10.0f, 20.0f};
 
-    // const auto c = a + b;
+    // 그냥 오리지널 변수값을 가진 변수 초기화
+    cppstudy::Vec2 value = original;
+    // 오리지널 변수값의 주소값을 가진 변수 초기화
+    cppstudy::Vec2& ref = original;
+    // 오리지널 변수값의 주소값으로 초기화
+    cppstudy::Vec2* ptr = &original;
 
-    // std::cout << "a.length() : " << a.length() << '\n';
-    // std::cout << "c: " << c.x << ", " << c.y << '\n';
+    ptr->y = 999.0f;
 
-    cppstudy::Vec2& vec = makeVec();
+    // 오리지널 주소 출력
+    std::cout << "original address  : " << &original << '\n';
+    // 일반 변수 주소 출력
+    std::cout << "value adress      : " << &value << "\n";
+    // 주소값 출력
+    std::cout << "ref adddress      : " << &ref << "\n";
+    // 주소값으로 초기화된 변수 출력
+    std::cout << "ptr value         : " << ptr << "\n";
 
-    std::cout << "vec address : " << &vec << "\n";
-    std::cout << "vec.x : " << &vec.x << ", vec.y : " << &vec.y << "\n";
-    std::cout << "vec.x : " << vec.x << ", vec.y : " << vec.y << "\n";
-
-    std::cout << "sizeof(float): "
-          << sizeof(float)
-          << '\n';
-
-    std::cout << "sizeof(Vec2): "
-          << sizeof(cppstudy::Vec2)
-          << '\n';
+    std::cout << '\n';
+    
+    std::cout << "original  : " << original.x << ", " << original.y << "\n";
+    std::cout << "value     : " << value.x << ", " << value.y << "\n";
+    std::cout << "ref       : " << ref.x << ", " << ref.y << "\n";
+    std::cout << "ptr       : " << ptr->x << ", " << ptr->y << "\n";
 
     return 0;
-}
-
-cppstudy::Vec2& makeVec()
-{
-    cppstudy::Vec2 v{1.0f, 2.0f};
-
-    return v;
 }
