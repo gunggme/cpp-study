@@ -34,3 +34,19 @@ target_link_libraries(cpp-study
     PRIVATE
         cppstudy
 )
+
+enable_testing()
+
+add_executable(vec2-test
+    tests/vec2_test.cpp
+)
+
+target_link_libraries(vec2-test
+    PRIVATE
+        cppstudy
+)
+
+add_test(
+    NAME vec2-test
+    COMMAND vec2-test
+)

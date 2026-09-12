@@ -5,3 +5,10 @@
 98	117	1789180188666496757	libcppstudy.a	851006047031a03f
 0	207	1789180188570281886	CMakeFiles/cpp-study.dir/src/main.cpp.o	9310c1acdd05c9c8
 208	242	1789180188777542666	cpp-study	90aaeb16bb6ee8f0
+0	17	1789180537662495669	build.ninja	c5897ceb0cc33582
+0	17	1789180537662227371	/home/gunggme/Projects/cpp-study/build/cmake_install.cmake	c5897ceb0cc33582
+1	100	1789180529730183288	CMakeFiles/vec2-test.dir/tests/vec2_test.cpp.o	2b265cde1b7a5fc3
+100	135	1789180529829182625	vec2-test	22408a623ea0bbd
+1	17	1789180537662495669	build.ninja	c5897ceb0cc33582
+1	17	1789180537662495669	/home/gunggme/Projects/cpp-study/build/cmake_install.cmake	c5897ceb0cc33582
+1	17	1789180537662495669	/home/gunggme/Projects/cpp-study/build/CTestTestfile.cmake	c5897ceb0cc33582

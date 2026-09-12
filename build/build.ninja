@@ -115,6 +115,57 @@ build cpp-study: CXX_EXECUTABLE_LINKER__cpp-study_Debug CMakeFiles/cpp-study.dir
   TARGET_PDB = cpp-study.dbg
   TARGET_SUPPORT_DIR = CMakeFiles/cpp-study.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target vec2-test
+
+
+#############################################
+# Order-only phony target for vec2-test
+
+build cmake_object_order_depends_target_vec2-test: phony || cmake_object_order_depends_target_cppstudy
+
+build CMakeFiles/vec2-test.dir/tests/vec2_test.cpp.o: CXX_COMPILER__vec2-test_unscanned_Debug /home/gunggme/Projects/cpp-study/tests/vec2_test.cpp || cmake_object_order_depends_target_vec2-test
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/vec2-test.dir/tests/vec2_test.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/gunggme/Projects/cpp-study/include
+  OBJECT_DIR = CMakeFiles/vec2-test.dir
+  OBJECT_FILE_DIR = CMakeFiles/vec2-test.dir/tests
+  TARGET_SUPPORT_DIR = CMakeFiles/vec2-test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vec2-test
+
+
+#############################################
+# Link the executable vec2-test
+
+build vec2-test: CXX_EXECUTABLE_LINKER__vec2-test_Debug CMakeFiles/vec2-test.dir/tests/vec2_test.cpp.o | libcppstudy.a || libcppstudy.a
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/vec2-test.dir/link.d
+  FLAGS = -g
+  LINK_FLAGS = -Xlinker --dependency-file=CMakeFiles/vec2-test.dir/link.d
+  LINK_LIBRARIES = libcppstudy.a
+  OBJECT_DIR = CMakeFiles/vec2-test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = vec2-test
+  TARGET_PDB = vec2-test.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles/vec2-test.dir
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/gunggme/Projects/cpp-study/build && /usr/bin/ctest
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
 
 #############################################
 # Utility command for edit_cache
@@ -152,7 +203,7 @@ build cppstudy: phony libcppstudy.a
 #############################################
 # Folder: /home/gunggme/Projects/cpp-study/build
 
-build all: phony libcppstudy.a cpp-study
+build all: phony libcppstudy.a cpp-study vec2-test
 
 # =============================================================================
 # Built-in targets
@@ -161,7 +212,7 @@ build all: phony libcppstudy.a cpp-study
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/gunggme/Projects/cpp-study/build/cmake_install.cmake: RERUN_CMAKE | /home/gunggme/Projects/cpp-study/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake
+build build.ninja /home/gunggme/Projects/cpp-study/build/cmake_install.cmake /home/gunggme/Projects/cpp-study/build/CTestTestfile.cmake: RERUN_CMAKE | /home/gunggme/Projects/cpp-study/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake
   pool = console
 
 
